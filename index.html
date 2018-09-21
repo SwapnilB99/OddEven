@@ -1,0 +1,51 @@
+<html>
+    <title>Odd or Even</title>
+    <head>
+       <link rel="stylesheet" href="css/style.css">
+        <style>
+            body{
+                background: url(art-materials-blank-business-351961.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            table{
+                color: whitesmoke;
+                background-color: darkolivegreen;
+                font-size: 25px;
+                margin-top: 30px;
+                margin-left: 60px;
+                width: 28%;
+                height: 20%;
+                padding: 40px;
+                opacity: 0.8;
+                border-radius: 30px;
+            }
+            .h{
+                color: whitesmoke;
+                text-align: center;
+                background-color: #829921;
+                margin-top: 160px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="h">To Check whether the no.is Even or Odd</h1>
+        <table>
+        <tr ><td><b>Enter a number</b></td><td><input type="number" id="num"></td></tr>
+        <br>
+        <tr><td><b>Check Number</b></td><td><button onclick="F1()">Click</button></td></tr>
+        </table>
+       <p id="demo"></p>
+       <p id="demo1"></p>
+       <script>
+        function F1(){
+            var x = document.getElementById("num").value;
+            if(x%2==0){
+                alert("Even");
+            }
+            else{
+                alert("Odd");
+            }
+        }
+        </script>
+    </body>
+</html>
